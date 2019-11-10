@@ -6,3 +6,4 @@ endpoints:
     os: "debian"
     version: "10"
     flavor: "core"
+    kernel: "debian-10-live-kernel"
