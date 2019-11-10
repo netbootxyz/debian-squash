@@ -1,6 +1,4 @@
-URL="http://releases.ubuntu.com/18.04/ubuntu-REPLACE_VERSION-desktop-amd64.iso.torrent"
-TYPE=torrent or file
+URL="https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/debian-live-REPLACE_VERSION-amd64-standard.iso.torrent"
+TYPE=torrent
 CONTENTS="\
-casper/initrd|initrd
-casper/vmlinuz|vmlinuz
-casper/filesystem.squashfs|filesystem.squashfs"
+live/filesystem.squashfs|filesystem.squashfs"

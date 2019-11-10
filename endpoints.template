@@ -1,7 +1,8 @@
 endpoints:
-  unique-key-name-used-as-menu-variable:
-    path: /ubuntu-squash/releases/download/REPLACE_RELEASE_NAME/
+  debian-10-default-squash::
+    path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
-    - initrd
-    - vmlinuz
+    os: "debian"
+    version: "10"
+    flavor: "core"
