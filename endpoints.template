@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-xfce-squash:
+  debian-10-lxde-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "debian"
     version: "10"
-    flavor: "xfce"
+    flavor: "lxde"
     kernel: "debian-10-live-kernel"
