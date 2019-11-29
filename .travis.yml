@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="xfce-kali"
+    - BRANCH="gnome-kali"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="iso_extraction"
 
 branches:
   only:
-    - 'xfce-kali'
+    - 'gnome-kali'
 if: type != pull_request AND tag IS blank
 script:
   - |
