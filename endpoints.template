@@ -1,9 +1,8 @@
 endpoints:
-  debian-10-default-squash:
+  tails-4.0-default-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
-    os: "debian"
-    version: "10"
-    flavor: "core"
-    kernel: "debian-10-live-kernel"
+    os: "tails"
+    version: "4.0"
+    kernel: "tails-4.0-live-kernel"
