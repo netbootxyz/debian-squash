@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-default-squash:
+  kali-xfce-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
-    os: "debian"
-    version: "10"
-    flavor: "core"
-    kernel: "debian-10-live-kernel"
+    os: "kali"
+    version: "rolling"
+    flavor: "xfce"
+    kernel: "kali-rolling-live-kernel"
