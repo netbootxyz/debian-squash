@@ -1,9 +1,9 @@
 endpoints:
-  kali-xfce-squash:
+  kali-mate-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "kali"
     version: "rolling"
-    flavor: "xfce"
+    flavor: "MATE"
     kernel: "kali-rolling-live-kernel"
