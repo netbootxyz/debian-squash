@@ -1,4 +1,4 @@
-URL="https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/debian-live-REPLACE_VERSION-amd64-standard.iso.torrent"
-TYPE=torrent
+URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-3.9-x64-tde.r1.iso"
+TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs"
