@@ -1,4 +1,4 @@
-URL="https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/debian-live-REPLACE_VERSION-amd64-standard.iso.torrent"
-TYPE=torrent
+URL="https://downloads.sourceforge.net/project/voyagerlive/Voyager-10.1-Debian-amd64.iso"
+TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs"

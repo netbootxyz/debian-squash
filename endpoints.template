@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-default-squash:
+  voyager-buster-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
-    os: "debian"
-    version: "10"
-    flavor: "core"
+    os: "Voyager"
+    version: "buster"
+    flavor: "buster"
     kernel: "debian-10-live-kernel"
