@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="q4os-3.9"
+    - BRANCH="q4os-3.9-plasma"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="iso_extraction"
 
 branches:
   only:
-    - 'q4os-3.9'
+    - 'q4os-3.9-plasma'
 if: type != pull_request AND tag IS blank
 script:
   - |

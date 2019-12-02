@@ -1,9 +1,9 @@
 endpoints:
-  q4os-3.9-default-squash:
+  q4os-3.9-plasma-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "Q4OS"
     version: "3.9"
-    flavor: "trinity"
+    flavor: "plasma"
     kernel: "debian-10-live-kernel"
