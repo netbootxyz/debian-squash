@@ -6,4 +6,4 @@ endpoints:
     os: "Q4OS"
     version: "3.9"
     flavor: "plasma"
-    kernel: "debian-10-live-kernel"
+    kernel: "q4os-3.9-default-squash"
