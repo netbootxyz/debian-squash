@@ -1,4 +1,4 @@
-URL="https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/debian-live-REPLACE_VERSION-amd64-mate.iso.torrent"
-TYPE=torrent
+URL="https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current-live/amd64/iso-hybrid/debian-live-REPLACE_VERSION-amd64-mate+nonfree.iso"
+TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs"
