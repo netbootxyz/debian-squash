@@ -3,7 +3,9 @@ endpoints:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
+    - initrd
+    - vmlinuz
     os: "Voyager"
     version: "buster"
     flavor: "buster"
-    kernel: "debian-10-live-kernel"
+    kernel: "voyager-buster-squash"

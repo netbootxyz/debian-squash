@@ -1,4 +1,9 @@
 URL="https://downloads.sourceforge.net/project/voyagerlive/Voyager-10.1-Debian-amd64.iso"
 TYPE=file
 CONTENTS="\
-live/filesystem.squashfs|filesystem.squashfs"
+live/filesystem.squashfs|filesystem.squashfs
+live/initrd.img*|initrd
+live/vmlinuz*|vmlinuz"
+EXTRACT_INITRD="true"
+INITRD_NAME="initrd"
+INITRD_TYPE="gz"
