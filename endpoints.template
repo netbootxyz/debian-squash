@@ -1,11 +1,10 @@
 endpoints:
-  voyager-buster-squash:
+  deepin-15-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "Voyager"
-    version: "buster"
-    flavor: "buster"
-    kernel: "voyager-buster-squash"
+    os: "Deepin"
+    version: "15"
+    kernel: "deepin-15-squash"

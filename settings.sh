@@ -1,9 +1,9 @@
-URL="https://downloads.sourceforge.net/project/voyagerlive/Voyager-10.1-Debian-amd64.iso"
+URL="https://osdn.net/projects/deepin/storage/REPLACE_VERSION/deepin-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
-live/initrd.img*|initrd
-live/vmlinuz*|vmlinuz"
+live/initrd.lz|initrd
+live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
 INITRD_TYPE="gz"
