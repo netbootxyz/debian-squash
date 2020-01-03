@@ -1,11 +1,11 @@
 endpoints:
-  q4os-3.9-default-squash:
+  q4os-3.10-default-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "Q4OS"
-    version: "3.9"
+    version: "3.10"
     flavor: "trinity"
-    kernel: "q4os-3.9-default-squash"
+    kernel: "q4os-3.10-default-squash"
