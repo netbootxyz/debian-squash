@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-3.10-x64-tde.r1.iso"
+URL="https://mirrors.gigenet.com/OSDN/clonezilla/71822/clonezilla-live-2.6.4-10-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
@@ -6,4 +6,4 @@ live/initrd.img|initrd
 live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
-INITRD_TYPE="gz"
+INITRD_TYPE="xz"

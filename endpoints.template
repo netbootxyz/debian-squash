@@ -1,11 +1,11 @@
 endpoints:
-  q4os-3.10-default-squash:
+  clonezilla-debian-stable:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "Q4OS"
-    version: "3.10"
-    flavor: "trinity"
-    kernel: "q4os-3.10-default-squash"
+    os: "clonezilla"
+    version: "debian"
+    flavor: "stable"
+    kernel: "clonezilla-debian-stable"
