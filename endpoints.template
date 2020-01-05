@@ -1,5 +1,5 @@
 endpoints:
-  clonezilla-debian-stable:
+  clonezilla-debian-testing:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -7,5 +7,5 @@ endpoints:
     - vmlinuz
     os: "clonezilla"
     version: "debian"
-    flavor: "stable"
-    kernel: "clonezilla-debian-stable"
+    flavor: "testing"
+    kernel: "clonezilla-debian-testing"
