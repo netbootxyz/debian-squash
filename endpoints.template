@@ -1,11 +1,11 @@
 endpoints:
-  q4os-3.9-default-squash:
+  sparky-stable-mingui:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "Q4OS"
-    version: "3.9"
-    flavor: "trinity"
-    kernel: "q4os-3.9-default-squash"
+    os: "sparky"
+    version: "stable"
+    flavor: "xfce-min"
+    kernel: "sparky-stable-mingui"
