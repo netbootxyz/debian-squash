@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="sparky-stable-mingui"
+    - BRANCH="sparky-stable-gui"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'sparky-stable-mingui'
+    - 'sparky-stable-gui'
 if: type != pull_request AND tag IS blank
 script:
   - |
