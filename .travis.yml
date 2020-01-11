@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="sparky-rolling-mingui"
+    - BRANCH="sparky-rolling-lxqt"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'sparky-rolling-mingui'
+    - 'sparky-rolling-lxqt'
 if: type != pull_request AND tag IS blank
 script:
   - |

@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/sparkylinux/base/sparkylinux-REPLACE_VERSION-x86_64-minimalgui.iso"
+URL="https://downloads.sourceforge.net/project/sparkylinux/lxqt/sparkylinux-REPLACE_VERSION-x86_64-lxqt.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
