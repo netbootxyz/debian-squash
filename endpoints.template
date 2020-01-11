@@ -1,5 +1,5 @@
 endpoints:
-  sparky-rolling-mingui:
+  sparky-rolling-gui:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -7,5 +7,5 @@ endpoints:
     - vmlinuz
     os: "sparky"
     version: "rolling"
-    flavor: "xfce-min"
-    kernel: "sparky-rolling-mingui"
+    flavor: "xfce"
+    kernel: "sparky-rolling-gui"
