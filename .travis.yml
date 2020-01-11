@@ -7,18 +7,18 @@ services:
 
 env:
   global:
-    - BRANCH="sparky-stable-mingui"
+    - BRANCH="sparky-rolling-mingui"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'sparky-stable-mingui'
+    - 'sparky-rolling-mingui'
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION=$(curl -sL https://sparkylinux.org/download/stable/ | awk '/LXQt/ {print $1;exit}' | grep -Po "(\d+\.)+\d+")
+    export EXTERNAL_VERSION=$(curl -sL https://sparkylinux.org/download/rolling/ | grep -B 2 LXQt | grep -Po "(\d+\.)+\d+")
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL

@@ -1,11 +1,11 @@
 endpoints:
-  sparky-stable-mingui:
+  sparky-rolling-mingui:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "sparky"
-    version: "stable"
+    version: "rolling"
     flavor: "xfce-min"
-    kernel: "sparky-stable-mingui"
+    kernel: "sparky-rolling-mingui"
