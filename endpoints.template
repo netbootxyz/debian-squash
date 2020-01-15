@@ -1,10 +1,10 @@
 endpoints:
-  deepin-15-squash:
+  devuan-ascii:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "Deepin"
-    version: "15"
-    kernel: "deepin-15-squash"
+    os: "devuan"
+    version: "2"
+    flavor: "ascii"

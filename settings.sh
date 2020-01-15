@@ -1,8 +1,8 @@
-URL="https://osdn.net/projects/deepin/storage/REPLACE_VERSION/deepin-REPLACE_VERSION-amd64.iso"
+URL="https://mirror.leaseweb.com/devuan/devuan_ascii/desktop-live/devuan_ascii_REPLACE_VERSION_amd64_desktop-live.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
-live/initrd.lz|initrd
+live/initrd.img|initrd
 live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
