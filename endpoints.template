@@ -1,5 +1,5 @@
 endpoints:
-  grml-full:
+  grml-small:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -7,4 +7,4 @@ endpoints:
     - vmlinuz
     os: "grml"
     version: "2018"
-    flavor: "full"
+    flavor: "small"

@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="grml-full"
+    - BRANCH="grml-small"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'grml-full'
+    - 'grml-small'
 if: type != pull_request AND tag IS blank
 script:
   - |
