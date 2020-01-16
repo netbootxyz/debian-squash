@@ -7,14 +7,14 @@ services:
 
 env:
   global:
-    - BRANCH="parrot-security-xfce"
+    - BRANCH="parrot-security-kde"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'parrot-security-xfce'
+    - 'parrot-security-kde'
 if: type != pull_request AND tag IS blank
 script:
   - |
