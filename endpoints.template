@@ -1,5 +1,5 @@
 endpoints:
-  parrot-home-xfce:
+  parrot-home-kde:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -7,4 +7,4 @@ endpoints:
     - vmlinuz
     os: "parrot"
     version: "current"
-    flavor: "xfce"
+    flavor: "kde"

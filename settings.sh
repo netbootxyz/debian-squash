@@ -1,4 +1,4 @@
-URL="https://download.parrot.sh/parrot/iso/REPLACE_VERSION/Parrot-home-REPLACE_VERSION_x64.iso"
+URL="https://download.parrot.sh/parrot/iso/REPLACE_VERSION/Parrot-kde-home-REPLACE_VERSION_x64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
