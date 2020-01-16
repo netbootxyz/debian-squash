@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-3.9-x64-tde.r1.iso"
+URL="https://download.parrot.sh/parrot/iso/REPLACE_VERSION/Parrot-home-REPLACE_VERSION_x64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
