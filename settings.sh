@@ -1,9 +1,9 @@
-URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-3.9-x64-tde.r1.iso"
+URL="http://download.grml.org/grml64-full_REPLACE_VERSION.iso"
 TYPE=file
 CONTENTS="\
-live/filesystem.squashfs|filesystem.squashfs
-live/initrd.img|initrd
-live/vmlinuz|vmlinuz"
+live/grml64-full/grml64-full.squashfs|filesystem.squashfs
+boot/grml64full/initrd.img|initrd
+boot/grml64full/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
 INITRD_TYPE="gz"
