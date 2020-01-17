@@ -7,18 +7,18 @@ services:
 
 env:
   global:
-    - BRANCH="q4os-3.9"
+    - BRANCH="rescatux"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'q4os-3.9'
+    - 'rescatux'
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION="3.9"
+    export EXTERNAL_VERSION=$(curl -sL https://www.supergrubdisk.org/category/download/rescatuxdownloads/rescatux-beta/ | awk -F '(rescatux-|.iso)' '/sourceforge.net\/projects\/rescatux/ {print $3;exit}')
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL
