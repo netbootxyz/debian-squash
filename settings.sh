@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/gparted/gparted-live-REPLACE_VERSION-amd64.iso"
+URL="https://downloads.sourceforge.net/project/septor/download_/Septor-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
@@ -6,4 +6,4 @@ live/initrd.img|initrd
 live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
-INITRD_TYPE="xz"
+INITRD_TYPE="gz"

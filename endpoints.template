@@ -1,9 +1,9 @@
 endpoints:
-  gparted-stable:
+  septor:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "gparted"
-    version: "stable"
+    os: "septor"
+    version: "current"
