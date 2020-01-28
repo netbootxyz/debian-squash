@@ -3,7 +3,9 @@ endpoints:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
+    - initrd
+    - vmlinuz
     os: "kali"
     version: "rolling"
     flavor: "xfce"
-    kernel: "kali-rolling-live-kernel"
+    kernel: "kali-xfce-squash"

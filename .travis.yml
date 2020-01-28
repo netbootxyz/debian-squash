@@ -10,7 +10,7 @@ env:
     - BRANCH="xfce-kali"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
-    - BUILD_TYPE="iso_extraction"
+    - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
@@ -18,7 +18,7 @@ branches:
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION=$(curl -sL https://bugs.kali.org/changelog_page.php | tr '&' '\n' |grep 'fixed_in_version' | sed -n '3p' | awk -F'=' '{print $2}')
+    export EXTERNAL_VERSION=$(curl -s https://cdimage.kali.org/ | awk -F '(kali-|/)' '/kali-/ {print $5}' |grep -v weekly | tail -n1)
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL

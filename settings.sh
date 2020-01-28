@@ -1,4 +1,9 @@
-URL="https://images.offensive-security.com/kali-linux-REPLACE_VERSION-amd64.iso.torrent"
-TYPE=torrent
+URL="https://cdimage.kali.org/kali-REPLACE_VERSION/kali-linux-REPLACE_VERSION-live-amd64.iso"
+TYPE=file
 CONTENTS="\
-live/filesystem.squashfs|filesystem.squashfs"
+live/filesystem.squashfs|filesystem.squashfs
+live/initrd.img|initrd
+live/vmlinuz|vmlinuz"
+EXTRACT_INITRD="true"
+INITRD_NAME="initrd"
+INITRD_TYPE="gz"
