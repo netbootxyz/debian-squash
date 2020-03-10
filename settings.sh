@@ -1,4 +1,4 @@
-URL="https://mirrors.gigenet.com/OSDN/clonezilla/71822/clonezilla-live-2.6.4-10-amd64.iso"
+URL="https://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/REPLACE_VERSION/clonezilla-live-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
