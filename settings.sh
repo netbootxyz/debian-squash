@@ -2,7 +2,7 @@ URL="http://mirrors.gigenet.com/linuxmint/iso/debian/lmde-REPLACE_VERSION-cinnam
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
-live/initrd.img|initrd
+live/initrd.lz|initrd
 live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
