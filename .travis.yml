@@ -7,18 +7,18 @@ services:
 
 env:
   global:
-    - BRANCH="sparky-stable-gui"
+    - BRANCH="mint-lmde-cinnamon"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'sparky-stable-gui'
+    - 'mint-lmde-cinnamon'
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION=$(curl -sL https://sparkylinux.org/download/stable/ | awk '/LXQt/ {print $1;exit}' | grep -Po "(\d+\.)+\d+")
+    export EXTERNAL_VERSION=$(curl -sL http://mirrors.gigenet.com/linuxmint/iso/debian/sha256sum.txt | awk -F '(lmde-|-cinnamon-64bit.iso)' '/-cinnamon-64bit.iso/ {print $2}' | tail -n1)
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL

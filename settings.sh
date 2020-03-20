@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/sparkylinux/xfce/sparkylinux-REPLACE_VERSION-x86_64-xfce.iso"
+URL="http://mirrors.gigenet.com/linuxmint/iso/debian/lmde-REPLACE_VERSION-cinnamon-64bit.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
@@ -6,4 +6,4 @@ live/initrd.img|initrd
 live/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
-INITRD_TYPE="gz"
+INITRD_TYPE="xz"

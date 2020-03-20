@@ -1,11 +1,11 @@
 endpoints:
-  sparky-stable-gui:
+  mint-lmde-cinnamon:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "sparky"
-    version: "stable"
-    flavor: "xfce"
-    kernel: "sparky-stable-gui"
+    os: "mint"
+    version: "lmde"
+    flavor: "Cinnamon"
+    kernel: "mint-lmde-cinnamon"
