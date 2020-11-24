@@ -7,18 +7,18 @@ services:
 
 env:
   global:
-    - BRANCH="sparky-rolling-gui"
+    - BRANCH="vyos-rolling"
     - GITHUB_ENDPOINT="netbootxyz/debian-squash"
     - DEBIAN_FRONTEND="noninteractive"
     - BUILD_TYPE="initrd_patch"
 
 branches:
   only:
-    - 'sparky-rolling-gui'
+    - 'vyos-rolling'
 if: type != pull_request AND tag IS blank
 script:
   - |
-    export EXTERNAL_VERSION=$(curl -sL https://sourceforge.net/projects/sparkylinux/files/xfce/ | awk -F '(sparkylinux-|-x86_64-xfce.iso)' '/-x86_64-xfce.iso/ {print $2;exit}')
+    export EXTERNAL_VERSION=$(curl -sL curl -s https://downloads.vyos.io/?dir=rolling/current/amd64 | grep -i `date +%Y%m01` | head -n 1 | awk -F'-' {'print $5'})
   - wget https://raw.githubusercontent.com/netbootxyz/build-pipelines/master/build.sh && chmod +x build.sh
   - git config --local user.name $GIT_USERNAME
   - git config --local user.email $GIT_EMAIL

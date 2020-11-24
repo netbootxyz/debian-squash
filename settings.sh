@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/sparkylinux/xfce/sparkylinux-REPLACE_VERSION-x86_64-xfce.iso"
+URL="https://downloads.vyos.io/rolling/current/amd64/vyos-1.3-rolling-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs

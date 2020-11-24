@@ -1,11 +1,11 @@
 endpoints:
-  sparky-rolling-gui:
+  vyos-rolling:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
-    os: "sparky"
+    os: "vyos"
     version: "rolling"
-    flavor: "xfce"
-    kernel: "sparky-rolling-gui"
+    flavor: "rolling"
+    kernel: "vyos-rolling"
