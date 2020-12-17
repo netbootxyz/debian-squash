@@ -47,29 +47,20 @@ jobs:
       run: |
         ./build.sh build ${{ env.BUILD_TYPE }}
         git tag ${{ env.GITHUB_TAG }}
-
+        
     - name: Create Release
       if: steps.compare.outcome == 'success' && steps.compare.conclusion == 'success'
-      uses: actions/create-release@v1
+      uses: ncipollo/release-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.GITHUB_TAG }}
-        release_name: ${{ env.GITHUB_TAG }}
+        artifacts: "buildout/*"
+        name: ${{ env.GITHUB_TAG }}
+        allowUpdates: true 
+        tag: ${{ env.GITHUB_TAG }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         draft: false
         prerelease: false
-
-    - name: Upload Assets
-      if: steps.compare.outcome == 'success' && steps.compare.conclusion == 'success'
-      uses: svenstaro/upload-release-action@v2
-      with:
-        file: buildout/*
-        file_glob: true
-        overwrite: true
-        prerelease: false
-        release_name: ${{ env.GITHUB_TAG }}
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        tag: ${{ env.GITHUB_TAG }}
 
     - name: Generate endpoints
       if: steps.compare.outcome == 'success' && steps.compare.conclusion == 'success'
