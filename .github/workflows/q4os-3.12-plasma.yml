@@ -1,14 +1,14 @@
-name: q4os-3.10-plasma
+name: q4os-3.12-plasma
 
 on:
   push:
     branches:
-      - q4os-3.10-plasma
+      - q4os-3.12-plasma
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: q4os-3.10-plasma
+  BRANCH: q4os-3.12-plasma
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: q4os-3.10-plasma
+        ref: q4os-3.12-plasma
 
     - name: Get SHA of actual branch instead of master
       run: |
