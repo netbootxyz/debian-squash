@@ -5,7 +5,7 @@ on:
     branches:
       - kde-10
   schedule:
-    - cron: '0 4 * * 6'
+    - cron: '0 4 * * 5'
 
 env:
   BRANCH: kde-10

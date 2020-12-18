@@ -5,7 +5,7 @@ on:
     branches:
       - sparky-stable-mingui
   schedule:
-    - cron: '0 4 * * 6'
+    - cron: '0 4 * * 5'
 
 env:
   BRANCH: sparky-stable-mingui
