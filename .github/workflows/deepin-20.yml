@@ -1,14 +1,14 @@
-name: deepin-15
+name: deepin-20
 
 on:
   push:
     branches:
-      - deepin-15
+      - deepin-20
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: deepin-15
+  BRANCH: deepin-20
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: deepin-15
+        ref: deepin-20
 
     - name: Get SHA of actual branch instead of master
       run: |

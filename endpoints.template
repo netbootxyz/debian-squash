@@ -1,10 +1,10 @@
 endpoints:
-  deepin-15-squash:
+  deepin-20-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "Deepin"
-    version: "15"
-    kernel: "deepin-15-squash"
+    version: "20"
+    kernel: "deepin-20-squash"
