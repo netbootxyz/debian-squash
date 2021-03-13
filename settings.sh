@@ -2,7 +2,8 @@ URL="https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmwar
 TYPE=file
 CONTENTS="\
 live/initrd*|initrd
-live/vmlinuz*|vmlinuz"
+live/vmlinuz*|vmlinuz
+live/filesystem.squashfs|filesystem.squashfs"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
 INITRD_TYPE="gz"
