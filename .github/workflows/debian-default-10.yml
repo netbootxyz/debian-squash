@@ -1,15 +1,15 @@
-name: clonezilla-stable
+name: debian-default-10
 
 on:
   push:
     branches:
-      - clonezilla-stable
+      - debian-default-10
   schedule:
-    - cron: '0 4 * * 5'
+    - cron: '0 4 * * 6'
 
 env:
-  BRANCH: clonezilla-stable
-  GITHUB_ENDPOINT: netbootxyz/debian-squash
+  BRANCH: debian-default-10
+  GITHUB_ENDPOINT: netbootxyz/ubuntu-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
   DEBIAN_FRONTEND: noninteractive
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: clonezilla-stable
+        ref: debian-default-10
 
     - name: Get SHA of actual branch instead of master
       run: |

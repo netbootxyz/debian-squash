@@ -3,7 +3,9 @@ endpoints:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
+    - initrd
+    - vmlinuz
     os: "debian"
     version: "10"
-    flavor: "core"
-    kernel: "debian-10-live-kernel"
+    flavor: "XFCE"
+    kernel: "debian-10-default-squash"
