@@ -1,5 +1,5 @@
 endpoints:
-  mint-lmde-cinnamon:
+  mint-lmde-cinnamon-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -8,4 +8,4 @@ endpoints:
     os: "mint"
     version: "lmde"
     flavor: "Cinnamon"
-    kernel: "mint-lmde-cinnamon"
+    kernel: "mint-lmde-cinnamon-squash"
