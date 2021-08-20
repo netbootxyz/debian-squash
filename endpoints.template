@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-lxqt-squash:
+  debian-11-lxqt-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "10"
+    version: "11"
     flavor: "lxqt"
-    kernel: "debian-10-live-kernel"
+    kernel: "debian-11-live-kernel"
