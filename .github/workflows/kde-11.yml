@@ -1,14 +1,14 @@
-name: kde-10
+name: kde-11
 
 on:
   push:
     branches:
-      - kde-10
+      - kde-11
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: kde-10
+  BRANCH: kde-11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: kde-10
+        ref: kde-11
 
     - name: Get SHA of actual branch instead of master
       run: |
