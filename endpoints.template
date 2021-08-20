@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-xfce-squash:
+  debian-11-xfce-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "10"
+    version: "11"
     flavor: "xfce"
-    kernel: "debian-10-live-kernel"
+    kernel: "debian-11-live-kernel"
