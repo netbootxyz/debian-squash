@@ -1,14 +1,14 @@
-name: gnome-10
+name: gnome-11
 
 on:
   push:
     branches:
-      - gnome-10
+      - gnome-11
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: gnome-10
+  BRANCH: gnome-11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: gnome-10
+        ref: gnome-11
 
     - name: Get SHA of actual branch instead of master
       run: |

@@ -1,9 +1,9 @@
 endpoints:
-  debian-10-gnome-squash:
+  debian-11-gnome-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "10"
+    version: "11"
     flavor: "gnome"
-    kernel: "debian-10-live-kernel"
+    kernel: "debian-11-live-kernel"
