@@ -1,14 +1,14 @@
-name: core-10
+name: core-11
 
 on:
   push:
     branches:
-      - core-10
+      - core-11
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: core-10
+  BRANCH: core-11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: core-10
+        ref: core-11
 
     - name: Get SHA of actual branch instead of master
       run: |
