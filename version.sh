@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-VERSION=$(curl -sL https://sparkylinux.org/download/stable/ | awk '/LXQt/ {print $1;exit}' | grep -Po "(\d+\.)+\d+")
+VERSION=$(curl -sL https://sparkylinux.org/download/stable/ | grep x86_64-minimalgui.iso | awk -F'-' '{print $3;exit}')
 echo "${VERSION}"
