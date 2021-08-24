@@ -1,11 +1,11 @@
 endpoints:
-  voyager-buster-squash:
+  voyager-bullseye-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "Voyager"
-    version: "buster"
-    flavor: "buster"
-    kernel: "voyager-buster-squash"
+    version: "bullseye"
+    flavor: "bullseye"
+    kernel: "voyager-bullseye-squash"

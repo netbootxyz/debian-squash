@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-VERSION="buster"
+VERSION="bullseye"
 echo "${VERSION}"

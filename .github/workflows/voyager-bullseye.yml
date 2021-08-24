@@ -1,14 +1,14 @@
-name: voyager-buster
+name: voyager-bullseye
 
 on:
   push:
     branches:
-      - voyager-buster
+      - voyager-bullseye
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: voyager-buster
+  BRANCH: voyager-bullseye
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: voyager-buster
+        ref: voyager-bullseye
 
     - name: Get SHA of actual branch instead of master
       run: |
