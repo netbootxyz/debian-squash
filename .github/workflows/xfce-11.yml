@@ -1,17 +1,17 @@
-name: voyager-buster
+name: xfce-11
 
 on:
   push:
     branches:
-      - voyager-buster
+      - xfce-11
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: voyager-buster
+  BRANCH: xfce-11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
-  BUILD_TYPE: initrd_patch
+  BUILD_TYPE: iso_extraction
   DEBIAN_FRONTEND: noninteractive
   CI_TOKEN: ${{ secrets.CI_TOKEN }}
 
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: voyager-buster
+        ref: xfce-11
 
     - name: Get SHA of actual branch instead of master
       run: |

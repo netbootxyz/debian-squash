@@ -1,17 +1,17 @@
-name: mate-10
+name: voyager-bullseye
 
 on:
   push:
     branches:
-      - mate-10
+      - voyager-bullseye
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: mate-10
+  BRANCH: voyager-bullseye
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
-  BUILD_TYPE: iso_extraction
+  BUILD_TYPE: initrd_patch
   DEBIAN_FRONTEND: noninteractive
   CI_TOKEN: ${{ secrets.CI_TOKEN }}
 
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: mate-10
+        ref: voyager-bullseye
 
     - name: Get SHA of actual branch instead of master
       run: |
