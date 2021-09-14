@@ -1,4 +1,4 @@
-URL="https://kali.download/base-images/kali-REPLACE_VERSION/kali-linux-REPLACE_VERSION-live-amd64.iso.torrent
+URL="https://kali.download/base-images/kali-REPLACE_VERSION/kali-linux-REPLACE_VERSION-live-amd64.iso.torrent"
 TYPE=torrent
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
