@@ -6,6 +6,6 @@ endpoints:
     - initrd
     - vmlinuz
     os: "kali"
-    version: "rolling"
+    version: "REPLACE_VERSION"
     flavor: "xfce"
     kernel: "kali-xfce-squash"
