@@ -1,5 +1,5 @@
-URL="https://cdimage.kali.org/kali-REPLACE_VERSION/kali-linux-REPLACE_VERSION-live-amd64.iso"
-TYPE=file
+URL="https://kali.download/base-images/kali-REPLACE_VERSION/kali-linux-REPLACE_VERSION-live-amd64.iso.torrent
+TYPE=torrent
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
 live/initrd.img|initrd
