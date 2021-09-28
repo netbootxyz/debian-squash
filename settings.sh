@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-3.13-x64-tde.r1.iso"
+URL="https://downloads.sourceforge.net/project/q4os/stable/q4os-REPLACE_VERSION-x64-tde.r1.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
