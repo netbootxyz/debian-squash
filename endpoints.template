@@ -1,9 +1,9 @@
 endpoints:
-  q4os-3.13-plasma-squash:
+  q4os-4.6-plasma-squash:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
-    os: "Q4OS"
-    version: "3.13"
-    flavor: "plasma"
-    kernel: "q4os-3.13-default-squash"
+    os: Q4OS
+    version: REPLACE_VERSION
+    flavor: plasma
+    kernel: q4os-4.6-default-squash
