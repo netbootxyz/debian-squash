@@ -4,6 +4,6 @@ endpoints:
     files:
     - filesystem.squashfs
     os: Q4OS
-    version: REPLACE_VERSION
+    version: 'REPLACE_VERSION'
     flavor: plasma
     kernel: q4os-4.6-default-squash
