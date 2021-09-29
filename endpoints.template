@@ -6,6 +6,6 @@ endpoints:
     - initrd
     - vmlinuz
     os: "Q4OS"
-    version: REPLACE_VERSION
+    version: "REPLACE_VERSION"
     flavor: "trinity"
     kernel: "q4os-4.6-default-squash"
