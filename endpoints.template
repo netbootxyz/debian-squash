@@ -1,11 +1,11 @@
 endpoints:
-  clonezilla-debian-testing:
+  clonezilla-debian-testing-amd64:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "clonezilla"
-    version: "debian"
+    version: "REPLACE_VERSION"
     flavor: "testing"
-    kernel: "clonezilla-debian-testing"
+    kernel: "clonezilla-debian-testing-amd64"
