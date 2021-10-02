@@ -1,14 +1,14 @@
-name: clonezilla-testing-amd64
+name: clonezilla-testing-i686
 
 on:
   push:
     branches:
-      - clonezilla-testing-amd64
+      - clonezilla-testing-i686
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: clonezilla-testing-amd64
+  BRANCH: clonezilla-testing-i686
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: clonezilla-testing-amd64
+        ref: clonezilla-testing-i686
 
     - name: Get SHA of actual branch instead of master
       run: |

@@ -1,4 +1,4 @@
-URL="https://downloads.sourceforge.net/project/clonezilla/clonezilla_live_testing/REPLACE_VERSION/clonezilla-live-REPLACE_VERSION-amd64.iso"
+URL="https://downloads.sourceforge.net/project/clonezilla/clonezilla_live_testing/REPLACE_VERSION/clonezilla-live-REPLACE_VERSION-i686.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs

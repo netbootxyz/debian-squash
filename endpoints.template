@@ -1,5 +1,5 @@
 endpoints:
-  clonezilla-debian-testing-amd64:
+  clonezilla-debian-testing-i686:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -8,4 +8,5 @@ endpoints:
     os: "clonezilla"
     version: "REPLACE_VERSION"
     flavor: "testing"
-    kernel: "clonezilla-debian-testing-amd64"
+    kernel: "clonezilla-debian-testing-i686"
+    arch: "i686"
