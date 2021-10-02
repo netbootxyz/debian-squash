@@ -1,11 +1,12 @@
 endpoints:
-  clonezilla-debian-stable:
+  clonezilla-debian-stable-i686:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "clonezilla"
-    version: "debian"
+    version: "REPLACE_VERSION"
     flavor: "stable"
-    kernel: "clonezilla-debian-stable"
+    kernel: "clonezilla-debian-stable-i686"
+    arch: "i686"
