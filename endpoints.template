@@ -9,3 +9,4 @@ endpoints:
     version: "REPLACE_VERSION"
     flavor: "testing"
     kernel: "clonezilla-debian-testing-amd64"
+    arch: "amd64"
