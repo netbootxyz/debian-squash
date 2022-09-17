@@ -1,4 +1,4 @@
-URL="https://osdn.net/projects/deepin/storage/REPLACE_VERSION/deepin-desktop-community-REPLACE_VERSION-amd64.iso"
+URL="https://cdimage.deepin.com/releases/REPLACE_VERSION/deepin-desktop-community-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs

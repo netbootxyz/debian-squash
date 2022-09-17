@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-VERSION="20.6"
+VERSION=$(curl -s https://www.deepin.org/en/download/ | awk -F '(deepin-desktop-community-|-amd64.iso)' '/deepin-desktop-community-/ {print $2;exit}')
 echo "${VERSION}"
