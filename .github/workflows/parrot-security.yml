@@ -1,14 +1,14 @@
-name: parrot-home-kde
+name: parrot-security
 
 on:
   push:
     branches:
-      - parrot-home-kde
+      - parrot-security
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: parrot-home-kde
+  BRANCH: parrot-security
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: parrot-home-kde
+        ref: parrot-security
 
     - name: Get SHA of actual branch instead of master
       run: |

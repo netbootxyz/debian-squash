@@ -1,14 +1,14 @@
-name: parrot-security-xfce
+name: parrot-architect
 
 on:
   push:
     branches:
-      - parrot-security-xfce
+      - parrot-architect
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: parrot-security-xfce
+  BRANCH: parrot-architect
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: parrot-security-xfce
+        ref: parrot-architect
 
     - name: Get SHA of actual branch instead of master
       run: |
