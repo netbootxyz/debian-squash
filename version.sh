@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-VERSION=$(curl -sL https://www.parrotlinux.org/download-home.php | grep 'download.parrot.sh' | grep -Po "(\d+\.)+\d+" | head -1)
+VERSION=$(curl -sL https://deb.parrot.sh/direct//parrot/iso/current/signed-hashes.txt | grep "Parrot OS" | awk -F' ' '{print $3}')
 echo "${VERSION}"

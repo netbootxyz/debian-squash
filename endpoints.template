@@ -1,10 +1,10 @@
 endpoints:
-  parrot-home-kde:
+  parrot-home:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
     - initrd
     - vmlinuz
     os: "parrot"
-    version: "current"
-    flavor: "kde"
+    version: "REPLACE_VERSION"
+    flavor: "home"
