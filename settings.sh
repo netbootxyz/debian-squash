@@ -1,4 +1,4 @@
-URL="https://deb.parrot.sh/direct/parrot/iso/REPLACE_VERSION/Parrot-home-REPLACE_VERSION_amd64.iso"
+URL="https://deb.parrot.sh/direct//parrot/iso/REPLACE_VERSION/Parrot-security-REPLACE_VERSION_amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs

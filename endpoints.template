@@ -1,5 +1,5 @@
 endpoints:
-  parrot-home:
+  parrot-security:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -7,4 +7,4 @@ endpoints:
     - vmlinuz
     os: "parrot"
     version: "REPLACE_VERSION"
-    flavor: "home"
+    flavor: "security"
