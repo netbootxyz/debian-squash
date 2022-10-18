@@ -1,4 +1,4 @@
-URL="https://pilotfiber.dl.sourceforge.net/project/rescatux/rescatux-REPLACE_VERSION/rescatux-REPLACE_VERSION.iso"
+URL="https://sourceforge.net/projects/rescatux/files/rescatux-REPLACE_VERSION/rescatux-REPLACE_VERSION.iso/download"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
