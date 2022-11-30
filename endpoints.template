@@ -6,5 +6,5 @@ endpoints:
     - initrd
     - vmlinuz
     os: "grml"
-    version: "2021.07"
+    version: "2022.11"
     flavor: "small"
