@@ -1,5 +1,5 @@
-URL="https://cdimage.deepin.com/releases/REPLACE_VERSION/deepin-desktop-community-REPLACE_VERSION-amd64.iso"
-TYPE=file
+URL="https://www.mediafire.com/file/wtyvksczav2yddv/deepin-desktop-community-20.8-amd64.iso.torrent/file"
+TYPE=torrent
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
 live/initrd.lz|initrd
