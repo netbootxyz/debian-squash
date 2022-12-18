@@ -1,4 +1,4 @@
-URL="https://www.mediafire.com/file/wtyvksczav2yddv/deepin-desktop-community-20.8-amd64.iso.torrent/file"
+URL="https://download2287.mediafire.com/gmrmfhcxuxsg/wtyvksczav2yddv/deepin-desktop-community-REPLACE_VERSION-amd64.iso.torrent"
 TYPE=torrent
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
