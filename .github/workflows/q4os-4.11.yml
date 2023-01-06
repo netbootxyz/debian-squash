@@ -1,19 +1,19 @@
-name: q4os-4.6-plasma
+name: q4os-4.11
 
 on:
   push:
     branches:
-      - q4os-4.6-plasma
+      - q4os-4.11
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: q4os-4.6-plasma
+  BRANCH: q4os-4.11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
-  BUILD_TYPE: iso_extraction
+  BUILD_TYPE: initrd_patch
   DEBIAN_FRONTEND: noninteractive
   CI_TOKEN: ${{ secrets.CI_TOKEN }}
 
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: q4os-4.6-plasma
+        ref: q4os-4.11
 
     - name: Get SHA of actual branch instead of master
       run: |
