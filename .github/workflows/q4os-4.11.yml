@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - q4os-4.11
+    paths-ignore:
+      - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
 
@@ -20,7 +22,7 @@ jobs:
     name: Version Checker
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         ref: q4os-4.11
 
