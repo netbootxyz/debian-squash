@@ -1,14 +1,14 @@
-name: q4os-4.6
+name: q4os-4.11
 
 on:
   push:
     branches:
-      - q4os-4.6
+      - q4os-4.11
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: q4os-4.6
+  BRANCH: q4os-4.11
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: q4os-4.6
+        ref: q4os-4.11
 
     - name: Get SHA of actual branch instead of master
       run: |
