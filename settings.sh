@@ -1,4 +1,4 @@
-URL="https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/current-live/amd64/iso-hybrid/debian-live-REPLACE_VERSION-amd64-kde+nonfree.iso"
+URL="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/debian-live-REPLACE_VERSION-amd64-kde.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs"
