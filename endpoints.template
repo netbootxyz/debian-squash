@@ -4,6 +4,6 @@ endpoints:
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "11"
+    version: "REPLACE_VERSION"
     flavor: "lxde"
-    kernel: "debian-11-live-kernel"
+    kernel: "debian-12-live-kernel"
