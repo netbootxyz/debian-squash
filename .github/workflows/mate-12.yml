@@ -1,16 +1,16 @@
-name: mate-11
+name: mate-12
 
 on:
   push:
     branches:
-      - mate-11
+      - mate-12
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: mate-11
+  BRANCH: mate-12
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: mate-11
+        ref: mate-12
 
     - name: Get SHA of actual branch instead of master
       run: |
