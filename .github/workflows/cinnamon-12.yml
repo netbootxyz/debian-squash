@@ -1,16 +1,16 @@
-name: cinnamon-11
+name: cinnamon-12
 
 on:
   push:
     branches:
-      - cinnamon-11
+      - cinnamon-12
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: cinnamon-11
+  BRANCH: cinnamon-12
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: cinnamon-11
+        ref: cinnamon-12
 
     - name: Get SHA of actual branch instead of master
       run: |
