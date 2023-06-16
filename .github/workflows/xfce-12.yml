@@ -1,16 +1,16 @@
-name: xfce-11
+name: xfce-12
 
 on:
   push:
     branches:
-      - xfce-11
+      - xfce-12
     paths-ignore:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
 
 env:
-  BRANCH: xfce-11
+  BRANCH: xfce-12
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        ref: xfce-11
+        ref: xfce-12
 
     - name: Get SHA of actual branch instead of master
       run: |
