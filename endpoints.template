@@ -4,6 +4,6 @@ endpoints:
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "REPLACE_VERSION"
+    version: "12"
     flavor: "cinnamon"
     kernel: "debian-12-live-kernel"
