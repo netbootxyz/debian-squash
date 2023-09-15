@@ -1,4 +1,4 @@
-URL="https://s3.amazonaws.com/s3-us.vyos.io/rolling/current/vyos-1.4-rolling-REPLACE_VERSION-amd64.iso"
+URL="https://github.com/vyos/vyos-rolling-nightly-builds/releases/download/REPLACE_VERSION/vyos-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
