@@ -8,6 +8,7 @@ on:
       - '.github/workflows/**'
   schedule:
     - cron: '0 4 * * 5'
+  workflow_dispatch:
 
 env:
   BRANCH: xfce-12
@@ -52,7 +53,7 @@ jobs:
 
     - name: Generate Release Notes
       run: |
-        echo "Release generated for Branch: **$${{ env.BRANCH }}**" > ${{ github.workspace }}-CHANGELOG.txt
+        echo "Release generated for Branch: **${{ env.BRANCH }}**" > ${{ github.workspace }}-CHANGELOG.txt
 
     - name: Create release and upload assets
       if: steps.compare.outcome == 'success' && steps.compare.conclusion == 'success'
