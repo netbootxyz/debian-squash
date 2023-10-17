@@ -1,9 +1,9 @@
 URL="http://mirrors.gigenet.com/linuxmint/iso/debian/lmde-REPLACE_VERSION-cinnamon-64bit.iso"
 TYPE=file
 CONTENTS="\
-live/filesystem.squashfs|filesystem.squashfs
-live/initrd.lz|initrd
-live/vmlinuz|vmlinuz"
+casper/filesystem.squashfs|filesystem.squashfs
+casper/initrd.lz|initrd
+casper/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
 INITRD_TYPE="xz"
