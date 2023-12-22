@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-VERSION="4.11"
+VERSION="$(curl -sL https://q4os.org/downloads1.html  | grep iso | head -n 1 | awk -F'-' '{print $2}')"
 echo "${VERSION}"
