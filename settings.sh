@@ -1,4 +1,4 @@
-URL="http://mirrors.gigenet.com/linuxmint/iso/debian/lmde-REPLACE_VERSION-cinnamon-64bit.iso"
+URL="http://mirrors.edge.kernel.org/linuxmint/debian/lmde-REPLACE_VERSION-cinnamon-64bit.iso"
 TYPE=file
 CONTENTS="\
 casper/filesystem.squashfs|filesystem.squashfs

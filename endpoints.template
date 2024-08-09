@@ -6,6 +6,6 @@ endpoints:
     - initrd
     - vmlinuz
     os: "mint"
-    version: "lmde"
+    version: "REPLACE_VERSION"
     flavor: "Cinnamon"
     kernel: "mint-lmde-cinnamon-squash"
