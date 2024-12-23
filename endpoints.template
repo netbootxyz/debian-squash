@@ -8,3 +8,4 @@ endpoints:
     os: "grml"
     version: "REPLACE_VERSION"
     flavor: "full"
+    arch: x86
