@@ -8,4 +8,4 @@ endpoints:
     os: "grml"
     version: "REPLACE_VERSION"
     flavor: "small"
-    arch: x86
+    arch: amd64
