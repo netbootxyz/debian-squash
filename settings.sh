@@ -1,9 +1,9 @@
-URL="https://download.grml.org/grml-full-REPLACE_VERSION-amd64.iso"
+URL="https://download.grml.org/grml-full-REPLACE_VERSION-arm64.iso"
 TYPE=file
 CONTENTS="\
-live/grml-full-amd64/grml-full-amd64.squashfs|filesystem.squashfs
-boot/grmlfullamd64/initrd.img|initrd
-boot/grmlfullamd64/vmlinuz|vmlinuz"
+live/grml-full-arm64/grml-full-arm64.squashfs|filesystem.squashfs
+boot/grmlfullarm64/initrd.img|initrd
+boot/grmlfullarm64/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
 INITRD_NAME="initrd"
 INITRD_TYPE="xz"

@@ -1,9 +1,9 @@
-name: grml-full-amd64
+name: grml-full-arm64
 
 on:
   push:
     branches:
-      - grml-full-amd64
+      - grml-full-arm64
     paths-ignore:
       - '.github/workflows/**'
   schedule:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  BRANCH: grml-full-amd64
+  BRANCH: grml-full-arm64
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: initrd_patch
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: grml-full-amd64
+        ref: grml-full-arm64
 
     - name: Get SHA of actual branch instead of master
       run: |
