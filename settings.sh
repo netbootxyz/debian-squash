@@ -1,7 +1,7 @@
 URL="https://download.grml.org/grml-small-REPLACE_VERSION-amd64.iso"
 TYPE=file
 CONTENTS="\
-live/grmlsmallamd64/grml-small-amd64.squashfs|filesystem.squashfs
+live/grml-small-amd64/grml-small-amd64.squashfs|filesystem.squashfs
 boot/grmlsmallamd64/initrd.img|initrd
 boot/grmlsmallamd64/vmlinuz|vmlinuz"
 EXTRACT_INITRD="true"
