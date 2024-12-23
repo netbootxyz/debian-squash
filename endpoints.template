@@ -1,5 +1,5 @@
 endpoints:
-  grml-small-amd64:
+  grml-small-arm64:
     path: /debian-squash/releases/download/REPLACE_RELEASE_NAME/
     files:
     - filesystem.squashfs
@@ -8,4 +8,4 @@ endpoints:
     os: "grml"
     version: "REPLACE_VERSION"
     flavor: "small"
-    arch: amd64
+    arch: arm64
