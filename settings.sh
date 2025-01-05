@@ -1,4 +1,4 @@
-URL="https://github.com/vyos/vyos-rolling-nightly-builds/releases/download/REPLACE_VERSION/vyos-REPLACE_VERSION-amd64.iso"
+URL="https://github.com/vyos/vyos-nightly-build/releases/download/REPLACE_VERSION/vyos-REPLACE_VERSION-generic-amd64.iso"
 TYPE=file
 CONTENTS="\
 live/filesystem.squashfs|filesystem.squashfs
