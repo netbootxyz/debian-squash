@@ -4,6 +4,6 @@ endpoints:
     files:
     - filesystem.squashfs
     os: "debian"
-    version: "13"
+    version: "REPLACE_VERSION"
     flavor: "core"
     kernel: "debian-13-live-kernel"
