@@ -1,9 +1,9 @@
-name: core-12
+name: core-13
 
 on:
   push:
     branches:
-      - core-12
+      - core-13
     paths-ignore:
       - '.github/workflows/**'
   schedule:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  BRANCH: core-12
+  BRANCH: core-13
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: core-12
+        ref: core-13
 
     - name: Get SHA of actual branch instead of master
       run: |

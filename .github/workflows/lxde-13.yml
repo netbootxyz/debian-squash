@@ -1,9 +1,9 @@
-name: lxde-12
+name: lxde-13
 
 on:
   push:
     branches:
-      - lxde-12
+      - lxde-13
     paths-ignore:
       - '.github/workflows/**'
   schedule:
@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 env:
-  BRANCH: lxde-12
+  BRANCH: lxde-13
   GITHUB_ENDPOINT: netbootxyz/debian-squash
   DISCORD_HOOK_URL: ${{ secrets.DISCORD_HOOK_URL }}
   BUILD_TYPE: iso_extraction
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        ref: lxde-12
+        ref: lxde-13
 
     - name: Get SHA of actual branch instead of master
       run: |
