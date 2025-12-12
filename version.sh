@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
-VERSION="2025.08"
+VERSION="2025.12"
 echo "${VERSION}"
 
